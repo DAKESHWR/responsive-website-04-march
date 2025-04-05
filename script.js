@@ -1,13 +1,16 @@
-burger = document.querySelector(".burger");
-navbar = document.querySelector(".navbar");
-rightnav = document.querySelector(".rightnav");
-navList = document.querySelector(".nav-list");
+const burger = document.querySelector(".burger");
+const navbar = document.querySelector(".navbar");
+const rightnav = document.querySelector(".rightnav");
+const navList = document.querySelector(".nav-list");
 
 burger.addEventListener("click", () => {
-    rightnav.classList.toggle("v-class-resp");
+    // rightnav.classList.toggle("v-class-resp");
+    rightnav.classList.toggle("v-class-show");
     navbar.classList.toggle("h-nav-resp");
     burger.classList.toggle("toggle");
     navList.classList.toggle("v-class-resp");
-    document.body.classList.toggle("no-scroll"); // Disable scrolling on body when menu is open
+    navList.classList.toggle("v-class-show");
+   
 });
-// Smooth scrolling effect for anchor links 
+
+// Jab nav-list ke kisi link par click ho, menu band ho jaye
